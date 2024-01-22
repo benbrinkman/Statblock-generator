@@ -1,293 +1,339 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Statblock Generator</title>
-        <link rel="stylesheet" type="text/css" href="Statblock.css">
-        <script type="text/javascript" src="Statblock.js"></script>
-    </head>
-    <body>
-        <div id="content" class="clearfix">
-            <div class="column">
-                <div class="dark title right">
-                    <b>Max HP:&nbsp;</b>
-                    <span id="maxHealth"></span> 
-                </div>
-                <div id="name" class="paddedBlock dark header"></div>
-                <div id="type" class="paddedBlock dark subtext">
-<!--                    <span id="size">Huge </span><span id="creature">humanoid</span><span id="alignment">, lawful good</span>-->
-                </div>
-                <div class="paddedBlock light">
-                    <div class = "subBlockContainer">
-                        <div class="subBlock text">
-                            <b>AC: </b>
-                            <span id="AC">
-                                18 (natural armour)
-                            </span>
-                        </div>
-                        <div class="subBlock text">
-                            <b>Speed: </b>
-                            <span id="speed">
-                            </span> 
-                        </div>
-                        <div class="subBlock text">
-                            <b>Prof:&nbsp;</b>+<span id=prof>7</span>
-                        </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Statblock Generator</title>
+    <link rel="stylesheet" type="text/css" href="Statblock.css">
+    <script type="text/javascript" src="Statblock.js"></script>
+</head>
+
+<body>
+    <div id="content" class="clearfix">
+        <div class="column">
+            <div class="dark title right">
+                <b>Max HP:&nbsp;</b>
+                <span id="maxHealth"></span>
+            </div>
+            <div id="creatureName" class="paddedBlock dark header"></div>
+            <div id="type" class="paddedBlock dark subtext">
+                <!--                    <span id="size">Huge </span><span id="creature">humanoid</span><span id="alignment">, lawful good</span>-->
+            </div>
+            <div class="paddedBlock light">
+                <div class="subBlockContainer">
+                    <div class="subBlock text">
+                        <b>AC: </b>
+                        <span id="AC">
+                            18 (natural armour)
+                        </span>
                     </div>
-                </div>
-                <div class = "block black">
-                    <div class ="subBlockContainer black" id="abilityScoreContainer">
-                        <div class="scoreBlock" id="STRblock">
-                            <div class="title">STR</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
-                        <div class="scoreBlock" id="DEXblock">
-                            <div class="title">DEX</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
-                        <div class="scoreBlock" id="CONblock">
-                            <div class="title">CON</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
-                        <div class="scoreBlock" id="INTblock">
-                            <div class="title">INT</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
-                        <div class="scoreBlock" id="WISblock">
-                            <div class="title">WIS</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
-                        <div class="scoreBlock" id="CHAblock">
-                            <div class="title">CHA</div>
-                            <div class ="subBlockContainer">
-                                <div class = "abilityScore"></div>
-                                <div class = "abilityMod title"></div>
-                                <div class = "abilitySave"></div>
-                            </div>
-
-                            <div class ="subBlockContainer">
-                                <div class = "abilityLabel right right">Score</div>
-                                <div class = "abilityLabel">Mod</div>
-                                <div class = "abilityLabel left">Save</div>
-                            </div>
-                        </div>
+                    <div class="subBlock text">
+                        <b>Speed: </b>
+                        <span id="speed">
+                        </span>
+                    </div>
+                    <div class="subBlock text">
+                        <b>Prof:&nbsp;</b>+<span id=prof>7</span>
                     </div>
                 </div>
-                <div class = "paddedBlock light text">
-                    <div class="block">
-                        <h>Skills:</h> 
-                        <span id="skills">
-                        </span>
+            </div>
+            <div class="block black">
+                <div class="subBlockContainer black" id="abilityScoreContainer">
+                    <div class="scoreBlock" id="STRblock">
+                        <div class="title">STR</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <h>Damage Vulnerabilities:</h> 
-                        <span id="damageVulnerability">
-                        </span>
+                    <div class="scoreBlock" id="DEXblock">
+                        <div class="title">DEX</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <h>Damage Resistances:</h> 
-                        <span id="damageResistance">
-                        </span>
+                    <div class="scoreBlock" id="CONblock">
+                        <div class="title">CON</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <h>Damage Immunities:</h> 
-                        <span id="damageImmunity">
-                        </span>
+                    <div class="scoreBlock" id="INTblock">
+                        <div class="title">INT</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <h>Condition Immunities:</h> 
-                        <span id="conditionImmunity">
-                        </span>
+                    <div class="scoreBlock" id="WISblock">
+                        <div class="title">WIS</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <h>Saving Throws:</h> 
-                        <span id="savingThrows">
-                        </span>
-                    </div>
-                    <div class="block">
-                        <h>Senses:</h> 
-                        <span id="senses">
-                        </span>
-                    </div>
-                    <div class="block">
-                        <h>Languages:</h> 
-                        <span id="languageKnown">
-                        </span>
-                    </div>
-                    
-                    <div class="block">
+                    <div class="scoreBlock" id="CHAblock">
+                        <div class="title">CHA</div>
+                        <div class="subBlockContainer">
+                            <div class="abilityScore"></div>
+                            <div class="abilityMod title"></div>
+                            <div class="abilitySave"></div>
+                        </div>
+
+                        <div class="subBlockContainer">
+                            <div class="abilityLabel right right">Score</div>
+                            <div class="abilityLabel">Mod</div>
+                            <div class="abilityLabel left">Save</div>
+                        </div>
                     </div>
                 </div>
-                <div class="paddedBlock dark title">Traits</div>
-                <div class="block light text">
-                    <div class="featureBlock">
-                        <span class = "featureHeader"><span class = "pink">Blood Hex of the Direlord.</span>
-                        </span> 
-                        <span class="featureDescription">
-                            Azoriandas is bound by a blood oath to kill Tiamat. If she is killed by anyone else or if he passes up an opportunity to kill her, he dies. <span class = "pink">Tiamat is considered hexed</span> by Azoriandas at all times. Azoriandas gains the following bonuses against creatures he has hexed:
-                        </span>
-                        <ul class="text">
-                            <li>A hexed creature cannot use Legendary Resistance or Indomitable against an effect Azoriandas triggers</li>
-                            <li>A Hexed creature has disadvantage on attack rolls against Azoriandas</li>
-                            <li>⚔ When Azoriandas hits a hexed creature, it cannot regain hitpoints until the start of his next turn</li>
-                            <li>⚔ Azoriandas crits on attack rolls of 18-20 when attacking a hexed creature</li>
-                            <li>⚔ Melee Attacks against a hexed creature deal <b><span class = "red">4d6</span></b> bonus damage</li>
-                            <li>⚔ When Azoriandas damages a hexed creature, it triggers his Bolstered Fury ability</li>
-                            <li>Azoriandas has resistance to all damage dealt by a hexed creature</li>
-                            <li>Azoriandas cannot be <b><span class = "blue">frightened</span></b> by a creature he has hexed</li>
-                        </ul>
-                    </div>
-
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Amphibious. </span>
-                        Azoriandas can breathe air and water.
-                    </div>
-
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Bolstered Fury. </span>
-                        <span class="featureDescription">
-                            When Azoriandas scores a critical hit or <span class = "pink">damages a hexed creature</span>, he gains <b><span class = "red">40</span></b> temp HP. While he has 1 or more of these temp HP, any creature that damages him takes <b><span class = "red">20</span></b> necrotic damage.
-                        </span>
-                    </div>
+            </div>
+            <div class="paddedBlock light text">
+                <div class="block">
+                    <h>Skills:</h>
+                    <span id="skills">
+                    </span>
                 </div>
-                <div class="paddedBlock dark title">Bonus Actions</div>
-                <div class="featureBlock light text">
-                    <span class = "featureHeader">(B) Cloud Leap. </span>
-                    <span class="featureDescription">
-                        As a bonus action, Azoriandas can leap up to 120 in any direction. 
+                <div class="block">
+                    <h>Damage Vulnerabilities:</h>
+                    <span id="damageVulnerability">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Damage Resistances:</h>
+                    <span id="damageResistance">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Damage Immunities:</h>
+                    <span id="damageImmunity">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Condition Immunities:</h>
+                    <span id="conditionImmunity">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Saving Throws:</h>
+                    <span id="savingThrows">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Senses:</h>
+                    <span id="senses">
+                    </span>
+                </div>
+                <div class="block">
+                    <h>Languages:</h>
+                    <span id="languageKnown">
                     </span>
                 </div>
 
-            </div>
-            <div class="column">
-                <div class="paddedBlock dark title">Reactions &amp; Between Turns</div>
-                <div class="block light text">
-                    <div class="featureBlock">
-                        <span class = "featureHeader">(R) Legendary Counter. </span>
-                        <span class="featureDescription">
-                            If a creature uses a legendary action to make an attack roll against Azoriandas or that would force him to make a saving throw, he may immediately use his reaction to move up to his movement speed, provoking no opportunity attacks. If the action was an attack roll or saving throw based on an area of effect and he is no longer in the area, he avoids the effect. If the effect is sight based, he avoids it only if he is no longer within sight. If he successfully is no longer targeted by the legendary action, he can use Direbeam directed at the creature that used the legendary action.
-                        </span>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Shards of Opportunity. </span>
-                        <span class="featureDescription">
-                            If a creature provokes an attack of opportunity (20ft. reach), Azoriandas can choose to automatically make an attack without using a reaction as a shard of the blade flies from its place to strike the target before returning to its place. <b><span class = "blue">+19</span>, <span class = "red">2d6+12</span></b> force
-                        </span>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Indomitable (3 uses). </span>
-                        <span class="featureDescription">
-                            If Azoriandas fails a saving throw, he can choose to succeed instead.
-                        </span>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Magic Resistance. </span>
-                        <span class="featureDescription">
-                            Azoriandas has advantage on saving throws against spells and other magical effects.
-                        </span>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Action Surge. </span>
-                        <span class="featureDescription">
-                            Take an additional action.
-                        </span>
-                    </div>
+                <div class="block">
                 </div>
-                <div class="paddedBlock dark title">Actions</div>
-                <div class="block light text">
-                    <div class="featureBlock">
-                        <span class = "featureHeader">Multiattack.</span>
-                        <span class="featureDescription">
-                            Azoriandas makes three attacks from the options below. <span class = "pink">If he damages a creature he has hexed, he uses his Bolstered Fury</span>:
-                        </span>
+            </div>
+            <div class="paddedBlock dark title" id="traitTitle">Traits</div>
+            <div class="block light text" id="trait">
+                <div class="featureBlock">
+                    <span class="featureHeader"><span class='pink'>Blood Hex of the Direlord.</span>
+                    </span>
+                    <span class="featureDescription">
+                        Azoriandas is bound by a blood oath to kill Tiamat. If she is killed by anyone else or if he
+                        passes up an opportunity to kill her, he dies. <span class='pink'>Tiamat is considered
+                            hexed</span> by Azoriandas at all times. Azoriandas gains the following bonuses against
+                        creatures he has hexed:
+                        <ul class="text">
+                            <li>A hexed creature cannot use Legendary Resistance or Indomitable against an effect
+                                Azoriandas triggers</li>
+                            <li>A Hexed creature has disadvantage on attack rolls against Azoriandas</li>
+                            <li>⚔ When Azoriandas hits a hexed creature, it cannot regain hitpoints until the start of
+                                his next turn</li>
+                            <li>⚔ Azoriandas crits on attack rolls of 18-20 when attacking a hexed creature</li>
+                            <li>⚔ Melee Attacks against a hexed creature deal <b><span class='red'>4d6</span></b> bonus
+                                damage</li>
+                            <li>⚔ When Azoriandas damages a hexed creature, it triggers his Bolstered Fury ability</li>
+                            <li>Azoriandas has resistance to all damage dealt by a hexed creature</li>
+                            <li>Azoriandas cannot be <b><span class='blue'>frightened</span></b> by a creature he has
+                                hexed</li>
+                        </ul>
+                    </span>
+                </div>
+
+                <div class="featureBlock">
+                    <span class="featureHeader">Amphibious. </span>
+                    <span class="featureDescription">
+                        Azoriandas can breathe air and water.
+                    </span>
+                </div>
+
+                <div class="featureBlock">
+                    <span class="featureHeader">Bolstered Fury. </span>
+                    <span class="featureDescription">
+                        When Azoriandas scores a critical hit or <span class='pink'>damages a hexed creature</span>, he
+                        gains <b><span class='red'>40</span></b> temp HP. While he has 1 or more of these temp HP, any
+                        creature that damages him takes <b><span class='red'>20</span></b> necrotic damage.
+                    </span>
+                </div>
+            </div>
+            <div class="paddedBlock dark title" id="bonusActionTitle">Bonus Actions</div>
+            <div class="featureBlock light text" id="bonusAction">
+                <div class="featureBlock">
+                    <span class="featureHeader">(B) Cloud Leap. </span>
+                    <span class="featureDescription">
+                        As a bonus action, Azoriandas can leap up to 120 in any direction.
+                    </span>
+                </div>
+            </div>
+            <div class="paddedBlock dark title" id="reactionTitle">Reactions &amp; Between Turns</div>
+            <div class="block light text" id="reaction">
+                <div class="featureBlock">
+                    <span class="featureHeader">(R) Legendary Counter. </span>
+                    <span class="featureDescription">
+                        If a creature uses a legendary action to make an attack roll against Azoriandas or that would
+                        force him to make a saving throw, he may immediately use his reaction to move up to his movement
+                        speed, provoking no opportunity attacks. If the action was an attack roll or saving throw based
+                        on an area of effect and he is no longer in the area, he avoids the effect. If the effect is
+                        sight based, he avoids it only if he is no longer within sight. If he successfully is no longer
+                        targeted by the legendary action, he can use Direbeam directed at the creature that used the
+                        legendary action.
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">Shards of Opportunity. </span>
+                    <span class="featureDescription">
+                        If a creature provokes an attack of opportunity (20ft. reach), Azoriandas can choose to
+                        automatically make an attack without using a reaction as a shard of the blade flies from its
+                        place to strike the target before returning to its place. <b><span class='blue'>+19</span>,
+                            <span class='red'>2d6+12</span></b> force
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">Indomitable (3 uses). </span>
+                    <span class="featureDescription">
+                        If Azoriandas fails a saving throw, he can choose to succeed instead.
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">Magic Resistance. </span>
+                    <span class="featureDescription">
+                        Azoriandas has advantage on saving throws against spells and other magical effects.
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">Action Surge. </span>
+                    <span class="featureDescription">
+                        Take an additional action.
+                    </span>
+                </div>
+            </div>
+            
+            <div class="paddedBlock dark title" id="legendaryTitle">Legendary Actions</div>
+            <div class="block light text" id="legendary"></div>
+        </div>
+        
+        <div class="column">
+
+            <div class="paddedBlock dark title" id="actionTitle">Actions</div>
+            <div class="block light text" id="action">
+                <div class="featureBlock">
+                    <span class="featureHeader">Multiattack.</span>
+                    <span class="featureDescription">
+                        Azoriandas makes three attacks from the options below. <span class='pink'>If he damages a
+                            creature he has hexed, he uses his Bolstered Fury</span>:
                         <ul>
                             <li>
-                                <span class = "featureHeader">The Unsettled Shards (+3). </span>
-                                <span class="featureDescription">
+                                <span class='featureHeader'>The Unsettled Shards (+3). </span>
+                                <span class='featureDescription'>
                                     <i>20ft. </i>
-                                    <b><span class = "blue">+19</span>, <span class = "red">8d6+12</span></b> force (<b><span class = "red">+4d6</span></b> <span class = "pink">bonus damage on hexed creatures</span>)
+                                    <b><span class='blue'>+19</span>, <span class='red'>8d6+12</span></b> force
+                                    (<b><span class='red'>+4d6</span></b> <span class='pink'>bonus damage on hexed
+                                        creatures</span>)
                                 </span>
                             </li>
                             <li>
-                                <span class = "featureHeader">Stomp. </span>
-                                <span class="featureDescription">
+                                <span class='featureHeader'>Stomp. </span>
+                                <span class='featureDescription'>
                                     <i>5ft., one huge or smaller creature. </i>
-                                    <b><span class = "blue">+16</span>, <span class = "red">5d10+9</span></b> bludgeoning. The target must succeed on a DC22 Dex save or have the <b><span class = "blue">prone</span></b> condition. Until Azoriandas moves or uses Stomp again, the creature has the <b><span class = "blue">restrained</span></b> condition. The restrained creature or another creature within 5ft can use an action to make a DC22 Strength check, on a success they relocate to an unoccupied space within 5 feet of Azoriandas and end the restrained condition.
+                                    <b><span class='blue'>+16</span>, <span class='red'>5d10+9</span></b> bludgeoning.
+                                    The
+                                    target must succeed on a DC22 Dex save or have the <b><span
+                                            class='blue'>prone</span></b> condition. Until Azoriandas moves or uses
+                                    Stomp
+                                    again, the creature has the <b><span class='blue'>restrained</span></b> condition.
+                                    The
+                                    restrained creature or another creature within 5ft can use an action to make a DC22
+                                    Strength check, on a success they relocate to an unoccupied space within 5 feet of
+                                    Azoriandas and end the restrained condition.
                                 </span>
                             </li>
                         </ul>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">(A) Direbeam </span> 
-                        <span class="featureDescription">
-                            <i>(Recharge 5-6). 500ft., </i>
-                            10ft radius, DC22 dex/half <b><span class = "red">12d8</span></b> force, on failure <b><span class = "blue">stunned</span></b> until end of next turn.
-                            The shards of the diresword spin out of place and swirl around as a black cloud gathers at the base, drawing the pieces inward. As they unite in the center, a dark beam of purple energy ripples streaks out forming a laser that focuses for a second before sputtering out, leaving the shards to snap back into place amidst a cloud of sulphuric smelling smoke.
-                        </span>
-                    </div>
-                    <div class="featureBlock">
-                        <span class = "featureHeader">(A) Shard Scatter </span>
-                        <span class="featureDescription">
-                            <i>(Recharge 5-6). 120/350 6 targets </i>
-                            <b><span class = "blue">+18</span>, <span class = "red">4d12+11</span></b> force, DC22 Con save or <span class = "pink">hexed</span> until end of Azoriandas’s next turn.
-                        </span>
-                    </div>
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">(A) Direbeam </span>
+                    <span class="featureDescription">
+                        <i>(Recharge 5-6). 500ft., </i>
+                        10ft radius, DC22 dex/half <b><span class='red'>12d8</span></b> force, on failure <b><span
+                                class='blue'>stunned</span></b> until end of next turn.
+                        The shards of the diresword spin out of place and swirl around as a black cloud gathers at the
+                        base, drawing the pieces inward. As they unite in the center, a dark beam of purple energy
+                        ripples streaks out forming a laser that focuses for a second before sputtering out, leaving the
+                        shards to snap back into place amidst a cloud of sulphuric smelling smoke.
+                    </span>
+                </div>
+                <div class="featureBlock">
+                    <span class="featureHeader">(A) Shard Scatter </span>
+                    <span class="featureDescription">
+                        <i>(Recharge 5-6). 120/350 6 targets </i>
+                        <b><span class='blue'>+18</span>, <span class='red'>4d12+11</span></b> force, DC22 Con save or
+                        <span class='pink'>hexed</span> until end of Azoriandas’s next turn.
+                    </span>
                 </div>
             </div>
         </div>
-        <script>
-            var style = getComputedStyle(document.body)
-//            console.log(style.getPropertyValue('--blockWidth'));
-        </script>
-    </body>
+    </div>
+    <script>
+        var style = getComputedStyle(document.body)
+        //            console.log(style.getPropertyValue('--blockWidth'));
+    </script>
+</body>
+
 </html>

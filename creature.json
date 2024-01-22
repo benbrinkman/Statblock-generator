@@ -1,0 +1,297 @@
+{
+    "abilityScore": [
+        30,
+        18,
+        30,
+        26,
+        26,
+        30
+    ],
+    "saveProficiencies": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        true
+    ],
+    "damageResistance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "damageImmunity": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+    ],
+    "damageVulnerability": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "conditions": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        false
+    ],
+    "additionalDamageResistance": [],
+    "additionalDamageImmunity": [],
+    "additionalDamageVulnerability": [],
+    "additionalConditionImmunity": [],
+    "skillProficiency": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+    ],
+    "skillExpertise": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "sense": [
+        0,
+        240,
+        0,
+        120
+    ],
+    "creature": 2,
+    "alignment": 5,
+    "size": 5,
+    "speed": [
+        60,
+        120,
+        0,
+        0,
+        0,
+        0
+    ],
+    "languageKnown": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "savingThrowAbilities": [
+        "Adv. vs spells and magic effects",
+        "Legendary Resistance (5)"
+    ],
+    "prof": 9,
+    "maxHealth": 900,
+    "AC": "25 (natural armour)",
+    "name": "Bahamut",
+    "features":[
+        {
+            "type":"trait",
+            "header":"Innate spellcasting (3/Day)",
+            "description":"Bahamut can innately cast divine word (spell save DC 27). His spellcasting ability is Charisma."
+        },
+        {
+            "type":"trait",
+            "header":"Magic Weapons.",
+            "description":"Bahamut’s weapon attacks are magical."
+        },
+        {
+            "type":"trait",
+            "header":"Regeneration.",
+            "description":"Bahamut regains 30 hit points at the start of his turn."
+        },
+        {
+            "type":"reaction",
+            "header":"Limited Magic Immunity.",
+            "description":"Unless he wishes to be affected, Bahamut is immune to spells of 6th level or lower. He has advantage on saving throws against all other spells and magical effects."
+        },
+        {
+            "type":"reaction",
+            "header":"Legendary Resistance (5/Day).",
+            "description":"If Bahamut fails a saving throw, he can choose to succeed instead."
+        },
+        {
+            "type":"reaction",
+            "header":"Reactive.",
+            "description":"Bahamut can make one reaction per turn, rather than only one per round. He also has advantage on saving throws against being knocked unconscious. If he fails a saving throw against an effect that would stun a creature, one of his unspent legendary actions is spent."
+        },
+        {
+            "type":"action",
+            "header":"Spellcasting.",
+            "description":"Bahamut is a 30th-level spellcaster. His spellcasting ability is Charisma (spell save DC 27, +19 to hit with spell attacks). He regains his expended spell slots when he finishes a long rest. He has the following spells prepared: 1st-9th level (10 9th-level slots): Foresight; Counterspell; Time Stop; Gate; Dispel Magic; Power Word Heal; Wish; Antimagic Field; Invulnerability; True Polymorph"
+        },
+        {
+            "type":"action",
+            "header":"Multiattack.",
+            "description":"Bahamut can use his Frightful Presence. He then makes three attacks: two with his claws and one with his bite, or uses one of his breath weapons. Each breath weapon recharges separately."
+        },
+        {
+            "type":"action",
+            "header":"Claw.",
+            "description":"Melee Weapon Attack: +19 to hit, reach 15 ft., one target. Hit: 24 (4d6 + 10) slashing damage. The creature must succeed on a DC 27 Charisma saving throw or the target’s Charisma score is reduced by 1d4. Otherwise, the reduction lasts until the target finishes a long rest."
+        },
+        {
+            "type":"action",
+            "header":"Bite.",
+            "description":"Melee Weapon Attack: +19 to hit, reach 20 ft., one target. Hit: 32 (4d10 + 10) piercing damage + 14 (4d6) radiant damage. The creature must succeed on a DC 27 Constitution saving throw or the target’s Constitution score is reduced by 1d4. Otherwise, the reduction lasts until the target finishes a long rest."
+        },
+        {
+            "type":"action",
+            "header":"Tail.",
+            "description":"Melee Weapon Attack: +19 to hit, reach 25 ft., one target. Hit: 28 (4d8 + 10) bludgeoning damage."
+        },
+        {
+            "type":"action",
+            "header":"Frightful Presence.",
+            "description":"Each creature of Bahamut's choice that is within 240 feet of Bahamut and aware of him must succeed on a DC 27 Wisdom saving throw or become Frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Bahamut's Frightful Presence for the next 24 hours."
+        },
+        {
+            "type":"action",
+            "header":"Breath weapon: Radiant Breath (Recharge 4-6).",
+            "description":"Bahamut exhales pure radiant energy in a 90-foot cone. Each creature of Bahamut’s choice in that area must make a DC 27 Wisdom saving throw. On a failed save, a creature takes 88 (16d10) radiant damage and is blinded and deafened until Bahamut’s next turn. On a successful save, it takes half as much damage and isn’t blinded and deafened. Additonaly, on a failed save, the creature takes 22 (4d10) radiant damage at the start of each of its turns. At the end of each of its turns, the target can make another Wisdom saving throw. Any creature of Bahamut’s choice in the breath weapon’s area regains 44 (8d10) hit points instead."
+        },
+        {
+            "type":"action",
+            "header":"Breath Weapon: Disintegration Breath. (Recharge 4-6)",
+            "description":"Bahamut exhales destructive energy in an 150-foot line that is 10 feet wide. Each creature in that line must make a DC 27 Charisma saving throw, taking 112 (16d8+40) force damage on a failed save, or half as much damage on a successful one. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a True Resurrection or a wish spell. This breath weapon automatically disintegrates a Huge or smaller nonmagical object or a Creation of magical force. If the target is a Gargantuan or larger object or Creation of force, this spell disintegrates a 15-foot-cube portion of it. A magic item is unaffected by this breath weapon."
+        },
+        {
+            "type":"action",
+            "header":"Breath Weapon: Cold Breath. (Recharge 4-6)",
+            "description":"Bahamut exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Constitution saving throw, taking 90 (20d8) cold damage on a failed save, or half as much damage on a successful one."
+        },
+        {
+            "type":"action",
+            "header":"Breath Weapon: Misty Breath. (Recharge 4-6)",
+            "description":"Bahamut exhales a blast of pacifying energy in a 90-foot cone. Each creature in that area must make a DC 27 Charisma saving throw or be incapacitated and turned into a fine mist for 1d4 hours."
+        },
+        {
+            "type":"legendary",
+            "header":"Tail.",
+            "description":"Bahamut makes a tail attack."
+        },
+        {
+            "type":"legendary",
+            "header":"Wing Attack.",
+            "description":"Bahamut beats his wings. Each creature within 15 feet of Bahamut must succeed on a DC 27 Dexterity saving throw or take 24 (4d6 + 10) bludgeoning damage and be knocked prone. Bahamut can then fly up to half his flying speed."
+        },
+        {
+            "type":"legendary",
+            "header":"Breath Weapon: Weakening Breath. (Costs 2 Actions)",
+            "description":"Bahamut exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 27 Strength saving throw or have disadvantage on Strength-based Attack rolls, Strength Checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        },
+        {
+            "type":"legendary",
+            "header":"Breath Weapon: Paralyzing Breath. (Costs 2 Actions)",
+            "description":"Bahamut exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a DC 27 Constitution saving throw or be Paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+        },
+        {
+            "type":"legendary",
+            "header":"Breath Weapon: Repulsion Breath. (Costs 2 Actions)",
+            "description":"Bahamut exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 27 Strength saving throw. On a failed save, the creature is pushed 60 feet away from Bahamut."
+        },
+        {
+            "type":"legendary",
+            "header":"Breath Weapon: Slowing Breath. (Costs 2 Actions)",
+            "description":"Bahamut exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 27 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one Attack on its turn. In addition, the creature can use either an action or a Bonus Action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+        },
+        {
+            "type":"legendary",
+            "header":"Breath Weapon: Sleep Breath. (Costs 2 Actions)",
+            "description":"Bahamut exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 27 Constitution saving throw or fall Unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it."
+        }
+    ]
+}
