@@ -10,118 +10,118 @@
 */
 //D&D stats and options
 var ability = [
-        "STR",
-        "DEX",
-        "CON",
-        "INT",
-        "WIS",
-        "CHA"
-    ];
+    "STR",
+    "DEX",
+    "CON",
+    "INT",
+    "WIS",
+    "CHA"
+];
 var damageType = [
-        "Acid",
-        "Bludgeoning",
-        "Cold",
-        "Fire",
-        "Force",
-        "Lightning",
-        "Necrotic",
-        "Piercing",
-        "Poison",
-        "Psychic",
-        "Radiant",
-        "Slashing",
-        "Thunder"
-    ];
+    "Acid",
+    "Bludgeoning",
+    "Cold",
+    "Fire",
+    "Force",
+    "Lightning",
+    "Necrotic",
+    "Piercing",
+    "Poison",
+    "Psychic",
+    "Radiant",
+    "Slashing",
+    "Thunder"
+];
 var conditionType = [
-        "Blinded",
-        "Charmed",
-        "Deafened",
-        "Exhaustion",
-        "Frightened",
-        "Grappled",
-        "Incapacitated",
-        "Invisible",
-        "Paralyzed",
-        "Petrified",
-        "Poisoned",
-        "Prone",
-        "Restrained",
-        "Stunned",
-        "Unconscious"
-    ];
+    "Blinded",
+    "Charmed",
+    "Deafened",
+    "Exhaustion",
+    "Frightened",
+    "Grappled",
+    "Incapacitated",
+    "Invisible",
+    "Paralyzed",
+    "Petrified",
+    "Poisoned",
+    "Prone",
+    "Restrained",
+    "Stunned",
+    "Unconscious"
+];
 var specialDamageType = [
-        "Bludgeoning, Piercing, and Slashing from nonmagical attacks",
-        "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine",
-        "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"
-    ];
+    "Bludgeoning, Piercing, and Slashing from nonmagical attacks",
+    "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine",
+    "Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered"
+];
 var skillList = [
-        "Acrobatics",
-        "Animal Handling",
-        "Arcana",
-        "Athletics",
-        "Deception",
-        "History",
-        "Insight",
-        "Intimidation",
-        "Investigation",
-        "Medicine",
-        "Nature",
-        "Perception",
-        "Performance",
-        "Persuasion",
-        "Religion",
-        "Sleight of Hand",
-        "Stealth",
-        "Survival"
-    ];
+    "Acrobatics",
+    "Animal Handling",
+    "Arcana",
+    "Athletics",
+    "Deception",
+    "History",
+    "Insight",
+    "Intimidation",
+    "Investigation",
+    "Medicine",
+    "Nature",
+    "Perception",
+    "Performance",
+    "Persuasion",
+    "Religion",
+    "Sleight of Hand",
+    "Stealth",
+    "Survival"
+];
 var skillAbility = [
-        1, //Acrobatics
-        4, //Animal Handling
-        3, //Arcana
-        0, //Athletics
-        5, //Deception
-        3, //History
-        4, //Insight
-        5, //Intimidation
-        3, //Investigation
-        4, //Medicine
-        3, //Nature
-        4, //Perception
-        5, //Performance
-        5, //Persuasion
-        3, //Religion
-        1, //Sleight of Hand
-        1, //Stealth
-        4, //Survival
-    ];
+    1, //Acrobatics
+    4, //Animal Handling
+    3, //Arcana
+    0, //Athletics
+    5, //Deception
+    3, //History
+    4, //Insight
+    5, //Intimidation
+    3, //Investigation
+    4, //Medicine
+    3, //Nature
+    4, //Perception
+    5, //Performance
+    5, //Persuasion
+    3, //Religion
+    1, //Sleight of Hand
+    1, //Stealth
+    4, //Survival
+];
 var senseType = [
-        "blindsight",
-        "darkvision",
-        "tremorsense",
-        "truesight"
-    ]
+    "blindsight",
+    "darkvision",
+    "tremorsense",
+    "truesight"
+];
 var languageType = [
-        "Abyssal",
-        "Auran",
-        "Aquan",
-        "Celestial",
-        "Common",
-        "Deep Speech",
-        "Draconic",
-        "Dwarvish",
-        "Elvish",
-        "Giant",
-        "Gnomish",
-        "Goblin",
-        "Halfling",
-        "Infernal",
-        "Ignan",
-        "Orc",
-        "Primordial",
-        "Sylvan",
-        "Terran",
-        "Under common"
-    ];
+    "Abyssal",
+    "Auran",
+    "Aquan",
+    "Celestial",
+    "Common",
+    "Deep Speech",
+    "Draconic",
+    "Dwarvish",
+    "Elvish",
+    "Giant",
+    "Gnomish",
+    "Goblin",
+    "Halfling",
+    "Infernal",
+    "Ignan",
+    "Orc",
+    "Primordial",
+    "Sylvan",
+    "Terran",
+    "Under common"
+];
 var sizeType = [
     "Tiny",         //0
     "Small",        //1
@@ -131,7 +131,7 @@ var sizeType = [
     "Gargantuan",   //5
     "Colossal"      //6
 ];
-var creatureType =[
+var creatureType = [
     "aberration",   //0
     "beast",        //1
     "celestial",    //2
@@ -147,7 +147,7 @@ var creatureType =[
     "plant",        //12
     "undead"        //13
 ];
-var alignmentType =[
+var alignmentType = [
     "lawful good",              //0
     "neutral good",             //1
     "chaotic good",             //2
@@ -175,122 +175,124 @@ var speedType = [
     "swim"
 ];
 
+
+
 //statblock specific variables
 var abilityScore = [
-        29, //STR
-        26, //DEX
-        28, //CON
-        20, //WIS
-        20, //INT
-        20 //CHA
-    ];
+    29, //STR
+    26, //DEX
+    28, //CON
+    20, //WIS
+    20, //INT
+    20 //CHA
+];
 var saveProficiencies = [
-        true, //STR
-        true, //DEX
-        true, //CON
-        false, //INT
-        true, //WIS
-        false //CHA
-    ];
+    true, //STR
+    true, //DEX
+    true, //CON
+    false, //INT
+    true, //WIS
+    false //CHA
+];
 var damageResistance = [
-        true, //Acid
-        true, //Bludgeoning
-        false, //Cold
-        true, //Fire
-        false, //Force
-        false, //Lightning
-        false, //Necrotic
-        true, //Piercing
-        false, //Poison
-        false, //Psychic
-        false, //Radiant
-        true, //Slashing
-        false //Thunder
-    ];
+    true, //Acid
+    true, //Bludgeoning
+    false, //Cold
+    true, //Fire
+    false, //Force
+    false, //Lightning
+    false, //Necrotic
+    true, //Piercing
+    false, //Poison
+    false, //Psychic
+    false, //Radiant
+    true, //Slashing
+    false //Thunder
+];
 var damageImmunity = [
-        false, //Acid
-        false, //Bludgeoning
-        true, //Cold
-        false, //Fire
-        false, //Force
-        true, //Lightning
-        false, //Necrotic
-        false, //Piercing
-        true, //Poison
-        false, //Psychic
-        false, //Radiant
-        false, //Slashing
-        true //Thunder
-    ];
+    false, //Acid
+    false, //Bludgeoning
+    true, //Cold
+    false, //Fire
+    false, //Force
+    true, //Lightning
+    false, //Necrotic
+    false, //Piercing
+    true, //Poison
+    false, //Psychic
+    false, //Radiant
+    false, //Slashing
+    true //Thunder
+];
 var damageVulnerability = [
-        false, //Acid
-        false, //Bludgeoning
-        false, //Cold
-        false, //Fire
-        false, //Force
-        false, //Lightning
-        false, //Necrotic
-        false, //Piercing
-        false, //Poison
-        false, //Psychic
-        false, //Radiant
-        false, //Slashing
-        false //Thunder
-    ];
+    false, //Acid
+    false, //Bludgeoning
+    false, //Cold
+    false, //Fire
+    false, //Force
+    false, //Lightning
+    false, //Necrotic
+    false, //Piercing
+    false, //Poison
+    false, //Psychic
+    false, //Radiant
+    false, //Slashing
+    false //Thunder
+];
 var additionalDamageResistance = [
-        "<span class = 'pink'>Damage dealt by hexed creatures</span>"
-    ];
+    "<span class = 'pink'>Damage dealt by hexed creatures</span>"
+];
 var additionalDamageImmunity = [];
 var additionalDamageVulnerability = [];
 var additionalConditionImmunity = [
-        "<span class = 'pink'>Frightened by hexed creatures</span>"
-    ];
+    "<span class = 'pink'>Frightened by hexed creatures</span>"
+];
 var skillProficiency = [
-        false, //Acrobatics
-        false, //Animal Handling
-        true, //Arcana
-        true, //Athletics
-        false, //Deception
-        true, //History
-        false, //Insight
-        false, //Intimidation
-        false, //Investigation
-        false, //Medicine
-        false, //Nature
-        true, //Perception
-        false, //Performance
-        false, //Persuasion
-        false, //Religion
-        false, //Sleight of Hand
-        false, //Stealth
-        false, //Survival
-    ];
+    false, //Acrobatics
+    false, //Animal Handling
+    true, //Arcana
+    true, //Athletics
+    false, //Deception
+    true, //History
+    false, //Insight
+    false, //Intimidation
+    false, //Investigation
+    false, //Medicine
+    false, //Nature
+    true, //Perception
+    false, //Performance
+    false, //Persuasion
+    false, //Religion
+    false, //Sleight of Hand
+    false, //Stealth
+    false, //Survival
+];
 var skillExpertise = [
-        false, //Acrobatics
-        false, //Animal Handling
-        false, //Arcana
-        false, //Athletics
-        false, //Deception
-        false, //History
-        false, //Insight
-        false, //Intimidation
-        false, //Investigation
-        false, //Medicine
-        false, //Nature
-        false, //Perception
-        false, //Performance
-        false, //Persuasion
-        false, //Religion
-        false, //Sleight of Hand
-        false, //Stealth
-        false, //Survival
-    ];
+    false, //Acrobatics
+    false, //Animal Handling
+    false, //Arcana
+    false, //Athletics
+    false, //Deception
+    false, //History
+    false, //Insight
+    false, //Intimidation
+    false, //Investigation
+    false, //Medicine
+    false, //Nature
+    false, //Perception
+    false, //Performance
+    false, //Persuasion
+    false, //Religion
+    false, //Sleight of Hand
+    false, //Stealth
+    false, //Survival
+];
 var sense = [
-        0, //blindsight
-        120, //darkvision
-        0, //tremorsense
-        0 //truesight
-    ];
+    0, //blindsight
+    120, //darkvision
+    0, //tremorsense
+    0 //truesight
+];
 var creature = 9;
 var alignment = 2;
 var size = 4;
@@ -305,32 +307,32 @@ var speed = [
 ];
 
 var languageKnown = [
-        false, //Abyssal
-        false, //Auran
-        false, //Aquan
-        false, //Celestial
-        true, //Common
-        false, //Deep Speech
-        false, //Draconic
-        false, //Dwarvish
-        false, //Elvish
-        true, //Giant
-        false, //Gnomish
-        false, //Goblin
-        false, //Halfling
-        false, //Infernal
-        false, //Ignan
-        false, //Orc
-        false, //Primordial
-        false, //Sylvan
-        false, //Terran
-        false, //Under common
-    ];
+    false, //Abyssal
+    false, //Auran
+    false, //Aquan
+    false, //Celestial
+    true, //Common
+    false, //Deep Speech
+    false, //Draconic
+    false, //Dwarvish
+    false, //Elvish
+    true, //Giant
+    false, //Gnomish
+    false, //Goblin
+    false, //Halfling
+    false, //Infernal
+    false, //Ignan
+    false, //Orc
+    false, //Primordial
+    false, //Sylvan
+    false, //Terran
+    false, //Under common
+];
 
 var savingThrowAbilities = [
-        "Adv. vs spells and magic effects",
-        "Indomitable (3)",
-        "Legendary Counter"
+    "Adv. vs spells and magic effects",
+    "Indomitable (3)",
+    "Legendary Counter"
 ];
 
 var prof = 7;
@@ -343,41 +345,41 @@ var type = "Gargantuan giant, chaotic good"
 
 //calculated values
 var abilityMod = [
-        0, //STR
-        0, //DEX
-        0, //CON
-        0, //WIS
-        0, //INT
-        0 //CHA
-    ];
+    0, //STR
+    0, //DEX
+    0, //CON
+    0, //WIS
+    0, //INT
+    0 //CHA
+];
 var saveMod = [
-        0, //STR
-        0, //DEX
-        0, //CON
-        0, //WIS
-        0, //INT
-        0 //CHA
-    ];
+    0, //STR
+    0, //DEX
+    0, //CON
+    0, //WIS
+    0, //INT
+    0 //CHA
+];
 var skill = [
-        0, //Acrobatics
-        0, //Animal Handling
-        0, //Arcana
-        0, //Athletics
-        0, //Deception
-        0, //History
-        0, //Insight
-        0, //Intimidation
-        0, //Investigation
-        0, //Medicine
-        0, //Nature
-        0, //Perception
-        0, //Performance
-        0, //Persuasion
-        0, //Religion
-        0, //Sleight of Hand
-        0, //Stealth
-        0, //Survival
-    ];
+    0, //Acrobatics
+    0, //Animal Handling
+    0, //Arcana
+    0, //Athletics
+    0, //Deception
+    0, //History
+    0, //Insight
+    0, //Intimidation
+    0, //Investigation
+    0, //Medicine
+    0, //Nature
+    0, //Perception
+    0, //Performance
+    0, //Persuasion
+    0, //Religion
+    0, //Sleight of Hand
+    0, //Stealth
+    0, //Survival
+];
 
 
 
@@ -385,11 +387,11 @@ window.addEventListener('load', function () {
     //this will update ability scores, mods, and saves
     calculateabilityMod();
 
-    writeValue("type", sizeType[size]+" "+creatureType[creature]+", "+alignmentType[alignment]);
+    writeValue("type", sizeType[size] + " " + creatureType[creature] + ", " + alignmentType[alignment]);
     writeValue("AC");
     writeValue("prof");
     writeValue("name");
-//    writeValue("type");
+    //    writeValue("type");
     writeValue("maxHealth");
     writeValue("savingThrows", savingThrowAbilities)
     calculateSkills();
@@ -414,13 +416,13 @@ function calculateabilityMod() {
 
 }
 
-function calculateSpeed(){
-    var speedText=speed[0]+"ft.";
-    speedType.forEach(function (item, index){
-//        console.log(speed);
+function calculateSpeed() {
+    var speedText = speed[0] + "ft.";
+    speedType.forEach(function (item, index) {
+        //        console.log(speed);
 
-        if (speed[index]>0 && index !=0){
-            speedText += ", "+item+" "+speed[index]+"ft.";
+        if (speed[index] > 0 && index != 0) {
+            speedText += ", " + item + " " + speed[index] + "ft.";
         }
     });
     console.log(speedText);
@@ -496,40 +498,40 @@ function calculateFeatureList(element, type) {
             listText = listText ? listText + ", " + item : listText + item;
         });
     }
-    if(listText){
-        document.getElementById(type + element).parentElement.hidden = false;    
-    }else{
+    if (listText) {
+        document.getElementById(type + element).parentElement.hidden = false;
+    } else {
         document.getElementById(type + element).parentElement.hidden = true;
     }
     document.getElementById(type + element).innerHTML = listText;
-    
+
 
 }
 
 function writeValue(element, value) {
-    var isValueUsed = !value?false:true;
-    
-    
-    if(Array.isArray(value)){
-        var newVal ="";
+    var isValueUsed = !value ? false : true;
+
+
+    if (Array.isArray(value)) {
+        var newVal = "";
         console.log(value.length);
-        value.forEach(function(item){
-             newVal += item +", ";
+        value.forEach(function (item) {
+            newVal += item + ", ";
         });
-        value = newVal.substring(0,newVal.length-2);
-        console.log(!value?true:false);
+        value = newVal.substring(0, newVal.length - 2);
+        console.log(!value ? true : false);
         console.log(value);
     }
     var parent = document.getElementById(element).parentElement;
-    
-    
+
+
     if (!isValueUsed) {
-        parent.hidden = window[element]?false:true;
+        parent.hidden = window[element] ? false : true;
         document.getElementById(element).innerHTML = window[element];
-        
+
 
     } else {
-        parent.hidden = value?false:true;
+        parent.hidden = value ? false : true;
         document.getElementById(element).innerHTML = value;
     }
 }
